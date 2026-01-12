@@ -1,0 +1,226 @@
+      * {
+          box-sizing: border-box;
+          font-family: Hind Siliguri;
+      }
+
+      body {
+          background-color: #f4f4f4;
+
+      }
+
+      .product-container {
+          max-width: 1350px;
+          padding-bottom: 200px;
+          margin: auto;
+          background: #fff;
+          display: flex;
+          gap: 10px;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* ইমেজ সেকশন স্টাইল */
+      .image-section {
+          flex: 1;
+      }
+
+      .main-image img {
+          width: 374px;
+          border-radius: 0px;
+          /* border: 1px solid #ddd; */
+      }
+
+      .thumbnail-gallery {
+          display: flex;
+          margin-top: 15px;
+          gap: 10px;
+          padding-left: 8px;
+
+      }
+
+      .thumbnail {
+          width: 80px;
+          height: 80px;
+          border: 1px solid #ddd;
+          cursor: pointer;
+          transition: 0.3s;
+          -webkit-tap-highlight-color: transparent;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+      .thumbnail:hover {
+          border-color: #f57224;
+      }
+
+
+
+      .product-details {
+          flex: 1 1 500px;
+          padding: 40px;
+      }
+
+      .product-title {
+          font-size: 16px;
+          color: black;
+          font-family: Inter, "Inter Fallback";
+          font-style: normal;
+          line-height: 24px;
+          /* উজ্জ্বল নীল শিরোনাম */
+          /* margin-bottom: 10px; */
+          font-weight: 600;
+          margin-top: 0px;
+          margin-bottom: 30px;
+      }
+
+      .product-price {
+          font-size: 20px;
+          color: #EF5E00;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          font-family: Inter, "Inter Fallback";
+          font-feature-settings: normal;
+          font-style: normal;
+          font-style: normal;
+          line-height: 30px;
+          font-weight: 600;
+      }
+
+      .old-price {
+          font-size: 16px;
+          color: oklch(0.551 0.027 264.364);
+          text-decoration: line-through;
+          /* পুরনো দাম কেটে দেওয়া */
+          margin-left: 0.25rem;
+          font-weight: 400;
+          font-family: Inter, "Inter Fallback";
+          font-feature-settings: normal;
+          font-style: normal;
+          font-style: normal;
+          line-height: 30px;
+
+      }
+
+      .product-rating {
+          margin-bottom: 20px;
+          color: #ffc107;
+          /* তারা চিহ্নের রং হলুদ */
+          font-size: 1.1em;
+          margin-bottom: 0px;
+      }
+
+
+      .product-short-description {
+          margin-bottom: 25px;
+          border-left: 4px solid #EF5E00;
+          padding-left: 15px;
+          font-style: normal;
+          color: #000000;
+          font-size: 18px;
+      }
+
+      .section-heading {
+          font-size: 1.4em;
+          color: #333;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          border-bottom: 2px solid #eee;
+          padding-bottom: 5px;
+      }
+
+      .features-list {
+          list-style-type: none;
+          padding-left: 0;
+          margin-bottom: 30px;
+      }
+
+      .features-list li span {
+          color: #27ae60;
+          /* টিক চিহ্নের রং */
+          font-weight: bold;
+          margin-right: 10px;
+      }
+
+      .features-list li {
+          padding: 8px 0;
+          border-bottom: 1px dotted #eee;
+          font-size: 16px;
+          font-weight: 500;
+      }
+
+      .buy-button {
+          background-color: #33D951;
+          color: #FFFFFF;
+          cursor: pointer;
+          transition: background-color 0.15s, color 0.15s, box-shadow 0.15s, transform 0.15s ease-in-out;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          font-family: Inter, "Inter Fallback";
+          padding: 12px 12px;
+          font-size: 14px;
+          font-weight: 500;
+          border-radius: 8px;
+          line-height: 20px;
+          gap: 4px;
+          margin-bottom: 20px;
+
+      }
+
+      .buy-button:hover {
+          background-color: #1FB255;
+          /* transform: translateY(-2px); */
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.30);
+          transform: scale(1.02);
+      }
+
+      .buy-button:active {
+          opacity: 0.70;
+      }
+
+      .product-long-description {
+          font-size: 18px;
+          margin-top: 20px;
+          text-align: justify;
+          font-weight: 500;
+      }
+
+      a,
+      button,
+      img,
+      .clickable {
+          outline: none;
+      }
+
+      .add-to-cart-button {
+          margin-top: 10px;
+      }
+
+      .product-image,
+      .product-details {
+          flex-basis: 100%;
+          padding: 10px;
+      }
+
+
+
+
+
+
+      /* মোবাইল রেসপনসিভ */
+      @media (max-width: 768px) {
+          .product-container {
+              flex-direction: column;
+              margin: 0px;
+
+          }
+
+          .thumbnail {
+              height: 66px;
+              width: 66px;
+
+          }
+
+      }
+
+
+    
