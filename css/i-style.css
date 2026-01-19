@@ -27,6 +27,11 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.bar {
+    outline: none;
+    border: none;
+}
+
 .nav-container {
     max-width: 1400px;
     height: 30px;
@@ -556,4 +561,5 @@ img:active,
     transition: opacity 0.2s ease;
 }
 }
+
 
